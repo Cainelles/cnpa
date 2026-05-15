@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8"/>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    Painel CNPA
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.0/package/dist/xlsx.full.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+
+      <h1>
+        Painel Operacional CNPA
+      </h1>
+
+      <div class="topo">
+
+        <input
+          type="file"
+          id="fileInput"
+          accept=".xlsx,.xls"
+        />
+
+        <button id="processarBtn">
+          Processar
+        </button>
+
+        <select id="filtroSelect">
+
+          <option value="TODOS">
+            TODOS
+          </option>
+
+          <option value="TRANSF. e ESTOC.">
+            TRANSF. e ESTOC.
+          </option>
+
+          <option value="UTILIDADES">
+            UTILIDADES
+          </option>
+
+          <option value="VAZAMENTOS">
+            VAZAMENTOS
+          </option>
+
+          <option value="PURGADORES">
+            PURGADORES
+          </option>
+
+          <option value="ZR">
+            ZR
+          </option>
+
+        </select>
+
+      </div>
+
+    </header>
+
+    <section id="dashboard"></section>
+
+    <section id="tabelaContainer">
+
+      <table id="tabela">
+
+        <thead>
+
+          <tr>
+
+            <th>OM</th>
+
+            <th>Texto</th>
+
+            <th>Área</th>
+
+            <th>Centro</th>
+
+            <th>Categoria</th>
+
+            <th>CNPA</th>
+
+            <th>IMPD</th>
+
+          </tr>
+
+        </thead>
+
+        <tbody></tbody>
+
+      </table>
+
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
