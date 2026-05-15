@@ -170,7 +170,7 @@ function processarDados(data){
     // TRANSF. e ESTOC.
     if(
 
-      ["CALDTU","MANDTU","AUSETU"]
+      ["CALDTU","MANDTU","AUSETU","RECVALV","OFICOMPL","PINTJCHT"]
       .includes(centro)
 
       &&
@@ -187,7 +187,7 @@ function processarDados(data){
     // UTILIDADES
     else if(
 
-      ["CALDTU","MANDTU","AUSETU"]
+      ["CALDTU","MANDTU","AUSETU","RECVALV","OFICOMPL","PINTJCHT"]
       .includes(centro)
 
       &&
