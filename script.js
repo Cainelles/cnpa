@@ -305,14 +305,20 @@ function atualizarDashboard(
   filtro
 ){
 
+  // TOTAL SEM IMPD
   const totalOrdens =
-    lista.length;
-
-  const totalCNPA =
     lista.filter(
-      x => x.cnpa
+      x => !x.impd
     ).length;
 
+  // CNPA SEM IMPD
+  const totalCNPA =
+    lista.filter(
+      x =>
+        x.cnpa && !x.impd
+    ).length;
+
+  // CNPA + IMPD
   const totalIMPD =
     lista.filter(
       x =>
