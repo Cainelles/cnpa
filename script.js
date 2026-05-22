@@ -306,10 +306,7 @@ function atualizarDashboard(
 ){
 
   // TOTAL SEM IMPD
-  const totalOrdens =
-    lista.filter(
-      x => !x.impd
-    ).length;
+  const totalOrdens = lista.length;
 
   // CNPA SEM IMPD
   const totalCNPA =
